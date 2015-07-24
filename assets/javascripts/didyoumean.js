@@ -72,7 +72,7 @@ function updateSimilarIssuesBlock(data) {
 
     if (data.total > data.issues.length) {
       var more = data.total - data.issues.length;
-      var more_text = '<li>' + more + ' ' + dym.label_more + '</li>'
+      var more_text = '<li>+ <a href="../search?all_words=1&titles_only=1&issues=1&q=' + document.getElementById("issue_subject").value + '">' + more + ' ' + dym.label_more + '</a></li>'
       items_html += more_text
     }
 
